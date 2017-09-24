@@ -1,3 +1,17 @@
-<h1>
+<h1 defColOnEvent>
   {{title}}
 </h1>
+<table border="1" defColOnEvent> 
+        <thead>
+            <th>Index</th>
+            <th>Name</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let name of studentName; let i=index">
+                <td>{{[i]}}</td>
+                <td>{{name}}</td>
+            </tr>
+        </tbody>
+    </table>
+      
+      
